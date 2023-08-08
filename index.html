@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaveSystem</title>
+    <style>
+        .for{
+           padding :20px 20px 20px 20px;
+            justify-content: center;
+            border: 3px solid yellowgreen;
+            align-items: center;
+            text-align: center;
+            width:350px;
+            margin-left: 500px;
+
+        }
+
+    </style>
+</head>
+<body style="background-color: cyan;">
+    <h1 style="text-align: center;
+    margin-top: 180px;
+    margin-left: 500px;
+    width:390px;
+    border: 2px solid blueviolet;
+    background-color: antiquewhite;">LeaveSystem</h1>
+    <div class="for">
+    <form method="post" action="server.php">
+        
+        <label for="stuid">StudentId</label>
+        <input type="number" name="stuid" id="stuid" required><br><br>
+        <label for="fnam">FirstName</label>
+        <input type="text" name="fnam" id="fnam" required><br><br>
+        <label for="lnam">LastName</label>
+        <input type="text" name="lnam" id="lnam" required><br><br>
+        <label for="dep">Department</label>
+        <input type="text" name="dep" id="dep" required><br><br>
+        <label for="dat">Date</label>
+        <input type="date" name="dat" id="dat" required><br><br>
+        <button type="submit" style="width: 300px">Submit</button><br><br>
+    
+    </form>
+    <form action="del.php" method="post">
+        <button type="submit" id="del" style="width: 300px">Delete</button></form> <br>
+    <form action="select.php" method="post"><button  style="width: 300px" type="submit" id="select">select</button></form> 
+</div>
+</body>
+</html>
